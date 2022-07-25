@@ -26,7 +26,8 @@ unset($value); // break the reference with the last element
 //$a = substr("",6);
 }else{
     //echo 'post';
-    
+echo '<a href="index.php">خانه</a> <hr>';
+
     $apost=file_get_contents($dir.$_GET['post'] . ".txt");
 echo "<h1>".substr($apost,0,49)."</h1>";
 echo "<br>";
