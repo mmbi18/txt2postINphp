@@ -28,8 +28,8 @@ unset($value); // break the reference with the last element
     //echo 'post';
     
     $apost=file_get_contents($dir.$_GET['post'] . ".txt");
-echo "<h1>".substr($apost,5)."</h1>";
+echo "<h1>".substr($apost,0,49)."</h1>";
 echo "<br>";
-echo  $apost;  
+echo  substr($apost,50,strlen($apost));  
 }
 ?>
